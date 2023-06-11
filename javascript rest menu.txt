@@ -1,0 +1,42 @@
+javascript rest menu
+
+// Define an array of food items
+const menu = [
+  {
+    name: 'Matooke and Groundnut Sauce',
+    price: 15000,
+    ingredients: ['Matooke', 'Groundnuts', 'Onions', 'Tomatoes'],
+  },
+  {
+    name: 'Posho and Beans',
+    price: 12000,
+    ingredients: ['Posho', 'Beans', 'Salt', 'Onions'],
+  },
+  {
+    name: 'Rolex',
+    price: 5000,
+    ingredients: ['Eggs', 'Chapati', 'Tomatoes', 'Onions'],
+  },
+];
+
+// Function to display the menu
+function displayMenu() {
+  // Loop through each item in the menu array
+  for (let i = 0; i < menu.length; i++) {
+    const item = menu[i];
+    
+    // Display the name, price, and ingredients of the item
+    console.log('Name: ' + item.name);
+    console.log('Price: UGX ' + item.price.toLocaleString());
+    console.log('Ingredients: ' + item.ingredients.join(', '));
+    console.log('----------------------');
+  }
+}
+
+// Call the function to display the menu
+displayMenu();
+
+
+
+
+\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\
